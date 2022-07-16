@@ -32,9 +32,10 @@ body, html {
 <body>
 
 <!-- product list --> 
-<div class="w3-top">
+<div class="w3-top" style="position: fixed;">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
     <a href="./index.html" class="w3-bar-item w3-button w3-wide">LOGO</a>
+    <a href="./index.html" class="w3-bar-item w3-button w3-wide">Modern Fasion Jewelry Wholesale</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="./index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
@@ -63,33 +64,39 @@ body, html {
   </div>
 </div>
 
-
   <!-- Sidebar on small screens when clicking the menu icon -->
   <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-    <a href="#product" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
-    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-    <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="./index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
+    <a href="./about.html" class="w3-bar-item w3-button"><i class="fa fa-address-card"></i> ABOUT</a>
+    <a href="./product.html?uid=1l25Xncyqmgm5680ZkxHsvnKl5tPjIWU2" class="w3-bar-item w3-button">Jewelry</a>
+    <a href="./product.html?uid=16-OudD-EpP7K4vVgAMUBqATUzqyDPtKi" class="w3-bar-item w3-button">Hair Accessories</a>
+    <a href="./product.html?uid=1EM9A7cpxvBl5OcRcxqD36U4fySxmeUi8" class="w3-bar-item w3-button">Novelty</a>
+    <a href="./product.html?uid=1qwPo5duNt-78L3x4FiKU8Njiueis2rWt" class="w3-bar-item w3-button">Backpacks</a>
+    <a href="./product.html?uid=1IuhXml5tWhblwLyctYgRyuRC4ZO6NO3J" class="w3-bar-item w3-button">Wallets</a>
+    <a href="./product.html?uid=1BCq0iQxhIC08ALDpXTGbNmrLEUB4j_2N" class="w3-bar-item w3-button">Stainless Steels</a>
+    <a href="./product.html?uid=12RsGStfBa4MyYL6gjaE_fQslfZawxzd8" class="w3-bar-item w3-button">Gold Filled</a>
+    <a href="./product.html?uid=1mYPeHVB4XAaIWyYs-h7GYRyGGA5R58mN" class="w3-bar-item w3-button">Wine Stopper</a>
+    <a href="./product.html?uid=1lwDKGVqHP7Lu5RBhEduFiO3BKtgIN_ri" class="w3-bar-item w3-button">Others</a>
   </nav>
 
 
 
-  <div class="w3-container" style="width: 100%; height: 100%; display: inline-block; padding-left: 10%; padding-right: 10%;">
-    <iframe id="google-drive" src="" frameborder="0" style="width:100%; height:100%; background-color: #777777; margin-top: 4%;"></iframe>
+  <div class="w3-container" style="width: 100%; height: 100%; display: inline-block; padding-left: 10%; padding-right: 10%; margin-top: 3%;">
+    <!-- <div class="w3-center" id="category-name" style="color: white; background-color: #777777; height: 5%;"><p><strong>This text is important!</strong></p></div> -->
+    <iframe id="google-drive" src="" frameborder="0" style="width:100%; height:100%; background-color: #777777; "></iframe>
   </div>
 
   <!-- Footer -->
   <footer class="footer" style="position: fixed;left: 0;bottom: 0;width: 100%;background-color: black;color: white;text-align: center;">
     <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-    <div class="w3-xlarge w3-section">
-      <i class="fa fa-facebook-official w3-hover-opacity"></i>
-      <i class="fa fa-instagram w3-hover-opacity"></i>
-      <i class="fa fa-snapchat w3-hover-opacity"></i>
-      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-      <i class="fa fa-twitter w3-hover-opacity"></i>
-      <i class="fa fa-linkedin w3-hover-opacity"></i>
-    </div>
-    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    <address>
+      <a href="https://goo.gl/maps/bHuHA2RN95AX9Zhf7">5403 W Irlo Bronson Memorial Hwy Building B#117, Kissimmee, FL 34746</a></br>
+      <a href="tel:407-575-9647"><i class="fa fa-phone"></i> 407-575-9647</a>
+      <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+      <span><i class="fa fa-envelope-o"></i> di711926@gmail.com</span>
+    </address>
+    <p>@copyright Modern Fasion Jewelry Wholesale 2022</p>  
   </footer>
 </div>
 
@@ -101,6 +108,8 @@ if (iframe.length) {
   console.log(urlParams);
   iframe.attr('src','https://drive.google.com/embeddedfolderview?id=' + urlParams.get('uid').trim() + '#grid');
 }
+
+$('category-name')
 
 // Toggle between showing and hiding the sidebar when clicking the menu icon
 var mySidebar = document.getElementById("mySidebar");
