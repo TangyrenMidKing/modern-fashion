@@ -26,6 +26,12 @@ body, html {
 .w3-bar .w3-button {
   padding: 16px;
 }
+
+@media screen and (max-width: 600px) {
+  #navbar-company-name{
+    display: none;
+  }
+}
 </style>
 </head>
 <body>
@@ -34,7 +40,7 @@ body, html {
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
     <a href="./index.html" class="w3-bar-item w3-button w3-wide">LOGO</a>
-    <a href="./index.html" class="w3-bar-item w3-button w3-wide">Modern Fasion Jewelry Wholesale</a>
+    <a href="./index.html" class="w3-bar-item w3-button w3-wide" id="navbar-company-name">Modern Fasion Jewelry Wholesale</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="./index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
