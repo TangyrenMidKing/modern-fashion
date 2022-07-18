@@ -33,6 +33,25 @@ body{
 .w3-bar .w3-button {
   padding: 16px;
 }
+
+@media screen and (max-width: 600px) {
+  #navbar-company-name{
+    display: none;
+  }
+
+  #footer-address{
+    display: none;
+  }
+
+  #main-content{
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+  }
+
+  #footer-contact{
+    display:inline-block !important;
+  }
+}
 </style>
 </head>
 <body>
@@ -41,7 +60,7 @@ body{
 <div class="w3-top" id="navbar" style="position: sticky !important;">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
     <a href="./index.html" class="w3-bar-item w3-button w3-wide">LOGO</a>
-    <a href="./index.html" class="w3-bar-item w3-button w3-wide">Modern Fasion Jewelry Wholesale</a>
+    <a href="./index.html" class="w3-bar-item w3-button w3-wide" id="navbar-company-name">Modern Fasion Jewelry Wholesale</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="./index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
@@ -99,8 +118,8 @@ body{
 
   <!-- Footer -->
   <footer class="footer" style="position: fixed;left: 0;bottom: 0;width: 100%;background-color: black;color: white;text-align: center;">
-    </br>
-    <address>
+    <a href="./about.html" class="w3-bar-item w3-button" id="footer-contact" style="display: none;"><i class="fa fa-address-card"></i> CONTACT US NOW</a>
+    <address id="footer-address">
       <a href="https://goo.gl/maps/bHuHA2RN95AX9Zhf7">5403 W Irlo Bronson Memorial Hwy Building B#117, Kissimmee, FL 34746</a></br>
       <a href="tel:407-575-9647"><i class="fa fa-phone"></i> 407-575-9647</a>      
       <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
