@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Modern Fasion Jewelry Wholesale</title>
+<title>Modern Fashion Jewelry Wholesale</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="./w3.css">
@@ -43,6 +43,22 @@ body{
     display: none;
   }
 
+  #navbar-company-name-hidden
+  {
+    display: inline-block !important;
+  }
+
+  #icon
+  {
+    display: none;
+  }
+  
+  #main-content
+  {
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+  }
+
   #footer-address-icon
   {
     display: inline-block !important;
@@ -59,8 +75,11 @@ body{
 <!-- product list --> 
 <div class="w3-top" id="navbar" style="position: sticky !important;">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="./index.html" class="w3-bar-item w3-button w3-wide">LOGO</a>
-    <a href="./index.html" class="w3-bar-item w3-button w3-wide" id="navbar-company-name">Modern Fasion Jewelry Wholesale</a>
+    <a href="./index.html" class="w3-bar-item w3-button w3-wide" id="icon" style="padding: 0%;">
+      <img src="./icon.jpg" alt="" style="max-height: fit-content; max-width: fit-content; ">
+    </a>
+    <a href="./index.html" class="w3-bar-item w3-button w3-wide" id="navbar-company-name">Modern Fashion Jewelry Wholesale</a>
+    <a href="./index.html" class="w3-bar-item w3-button w3-wide" style="display: none;" id="navbar-company-name-hidden">Modern Fashion</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="./index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
@@ -113,7 +132,7 @@ body{
 
   <div class="w3-container" id="main-content" style="width: 100%; position: fixed; padding-left: 10%; padding-right: 10%; margin-top: 0%;">
     <h3 class="w3-center" id="category-name" style="color: rgb(0, 0, 0); background-color:white; height: 5%; margin: 0;">Jewelry</h3>
-    <iframe id="google-drive" src="" frameborder="0" style="width:100%; min-height: inherit; background-color: #777777; "></iframe>
+    <iframe id="google-drive" src="" frameborder="0" style="width:100%; background-color: #777777; "></iframe>
   </div>
 
   <!-- Footer -->
@@ -126,7 +145,7 @@ body{
       <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
       <span><i class="fa fa-envelope-o"></i> di711926@gmail.com</span>
       </br>
-      <span>@copyright Modern Fasion Jewelry Wholesale 2022</span> 
+      <span>@copyright Modern Fashion Jewelry Wholesale 2022</span> 
     </address>
 
     <address id="footer-address-icon" style="display: none;">
@@ -137,7 +156,7 @@ body{
       <a href="https://wa.me/14075759647"><i class="fa fa-whatsapp"></i></a>
       <!-- <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span> -->
       </br>
-      <span>@copyright Modern Fasion Jewelry Wholesale 2022</span>
+      <span>@copyright Modern Fashion Jewelry Wholesale 2022</span>
     </address>
   </footer>
 </div>
@@ -157,6 +176,10 @@ var heightFooter = $('footer').height();
 var mainHeight = heightHeader + heightFooter;
 var divHeight = 'calc(100vh - ' + mainHeight + 'px)';
 $('#main-content').css('min-height', divHeight);
+mainHeight = heightHeader + heightFooter + $('#category-name').height();
+divHeight = 'calc(100vh - ' + mainHeight + 'px)';
+$('#google-drive').css('min-height', divHeight);
+console.log(divHeight);
 
 // Toggle between showing and hiding the sidebar when clicking the menu icon
 var mySidebar = document.getElementById("mySidebar");
