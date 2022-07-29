@@ -27,6 +27,11 @@ body, html {
   padding: 16px;
 }
 
+#product img {
+  width: 300px;
+  height: 300px;
+}
+
 @media screen and (max-width: 600px) {
   #navbar-company-name{
     display: none;
@@ -102,16 +107,16 @@ body, html {
   </nav>
 
 <!-- Product Section -->
-<div class="w3-container" style="padding:128px 16px" id="product">
-  <h3 class="w3-center">Shop by Category</h3>
-  <div class="w3-row-padding w3-grayscale" style="margin-top:60px; margin-left: 10%; margin-right: 10%;">
+<div class="w3-container" style="padding:60px 16px" id="product">
+  <h3 class="w3-center" id="category-name" style="color: rgb(0, 0, 0); background-color:white; height: 5%; margin: 0;">Shop by Category</h3>
+  <div class="w3-row-padding" style="margin-top:0; margin-left: 10%; margin-right: 10%;">
 
     <div class="w3-col l3 m5 w3-margin-bottom">
       <div class="w3-card">
-        <img src="./wallet.png" alt="Novelty" style="width:100%">
+        <img src="./Novelty.jpg" alt="Novelty" style="width:100%">
         <div class="w3-container">
           <h3>Novelty</h3>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p>New novelty every week!</p>
           <p><button class="w3-button w3-light-grey w3-block" id="Novelty">Details</button></p>
         </div>
       </div>
@@ -119,10 +124,10 @@ body, html {
 
     <div class="w3-col l3 m5 w3-margin-bottom">
       <div class="w3-card">
-        <img src="./wallet.png" alt="Jewelry" style="width:100%">
+        <img src="./Jewelry.JPG" alt="Jewelry" style="width:100%">
         <div class="w3-container">
           <h3>Jewelry</h3>
-          <p>Some text here. could be price, introduction, and more.</p>
+          <p>Bracelet, necklace and more!</p>
           <p><button class="w3-button w3-light-grey w3-block" id="Jewelry">Details</button></p>
         </div>
       </div>
@@ -130,10 +135,10 @@ body, html {
     
     <div class="w3-col l3 m5 w3-margin-bottom">
       <div class="w3-card">
-        <img src="./wallet.png" alt="Hair Accessories" style="width:100%">
+        <img src="./Hair Accessory.JPG" alt="Hair Accessories" style="width:100%">
         <div class="w3-container">
           <h3>Hair Accessories</h3>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p>All kinds of hair accessories!</p>
           <p><button class="w3-button w3-light-grey w3-block" id="HairAccessories">Details</button></p>
         </div>
       </div>
@@ -141,76 +146,10 @@ body, html {
 
     <div class="w3-col l3 m5 w3-margin-bottom">
       <div class="w3-card">
-        <img src="./wallet.png" alt="Backpacks" style="width:100%">
-        <div class="w3-container">
-          <h3>Backpacks</h3>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block" id="Backpacks">Details</button></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="w3-col l3 m5 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="./wallet.png" alt="Wallets" style="width:100%">
-        <div class="w3-container">
-          <h3>Wallets</h3>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block" id="Wallets">Details</button></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="w3-col l3 m5 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="./wallet.png" alt="Stainless Steels" style="width:100%">
-        <div class="w3-container">
-          <h3>Stainless Steels</h3>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block" id="StainlessSteels">Details</button></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="w3-col l3 m5 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="./wallet.png" alt="Gold Filled" style="width:100%">
-        <div class="w3-container">
-          <h3>Gold Filled</h3>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block" id="GoldFilled">Details</button></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="w3-col l3 m5 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="./wallet.png" alt="Wine Stopper" style="width:100%">
-        <div class="w3-container">
-          <h3>Wine Stopper</h3>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block" id="WineStopper">Details</button></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="w3-col l3 m5 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="./wallet.png" alt="Wine Stopper" style="width:100%">
-        <div class="w3-container">
-          <h3>Sunglasses</h3>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block" id="Sunglasses">Details</button></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="w3-col l3 m5 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="./wallet.png" alt="Wine Stopper" style="width:100%">
+        <img src="./Country.JPG" alt="Country" style="width:100%">
         <div class="w3-container">
           <h3>Country</h3>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p>Decorations for countries!</p>
           <p><button class="w3-button w3-light-grey w3-block" id="Country">Details</button></p>
         </div>
       </div>
@@ -218,10 +157,87 @@ body, html {
 
     <div class="w3-col l3 m5 w3-margin-bottom">
       <div class="w3-card">
-        <img src="./wallet.png" alt="Others" style="width:100%">
+        <img src="./Backpack.JPG" alt="Backpacks" style="width:100%">
+        <div class="w3-container">
+          <h3>Backpacks</h3>
+          <p>Cute backpack and accessories!</p>
+          <p><button class="w3-button w3-light-grey w3-block" id="Backpacks">Details</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m5 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="./Wallet.jpg" alt="Wallets" style="width:100%">
+        <div class="w3-container">
+          <h3>Wallets</h3>
+          <p>Wallets and purses!</p>
+          <p><button class="w3-button w3-light-grey w3-block" id="Wallets">Details</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m5 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="./Stainless Steels.jpg" alt="Stainless Steels" style="width:100%">
+        <div class="w3-container">
+          <h3>Stainless Steels</h3>
+          <p>Stainless steel product!</p>
+          <p><button class="w3-button w3-light-grey w3-block" id="StainlessSteels">Details</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m5 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="./Gold Filled.jpg" alt="Gold Filled" style="width:100%">
+        <div class="w3-container">
+          <h3>Gold Filled</h3>
+          <p>Gold filled product!</p>
+          <p><button class="w3-button w3-light-grey w3-block" id="GoldFilled">Details</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m5 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="./Jewelry Display.jpg" alt="Jewelry Display" style="width:100%">
+        <div class="w3-container">
+          <h3>Jewelry Display</h3>
+          <p>Stand, shelf, box and more!</p>
+          <p><button class="w3-button w3-light-grey w3-block" id="WineStopper">Details</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m5 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="./Wine Stopper.jpg" alt="Wine Stopper" style="width:100%">
+        <div class="w3-container">
+          <h3>Wine Stopper</h3>
+          <p>All kinds of wine stopper!</p>
+          <p><button class="w3-button w3-light-grey w3-block" id="WineStopper">Details</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m5 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="./Sunglasses.JPG" alt="Sunglasses" style="width:100%">
+        <div class="w3-container">
+          <h3>Sunglasses</h3>
+          <p>Variety of sunglasses!</p>
+          <p><button class="w3-button w3-light-grey w3-block" id="Sunglasses">Details</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m5 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="./Others.jpg" alt="Others" style="width:100%">
         <div class="w3-container">
           <h3>Others</h3>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p>And everything else!</p>
           <p><button class="w3-button w3-light-grey w3-block" id="Others">Details</button></p>
         </div>
       </div>
